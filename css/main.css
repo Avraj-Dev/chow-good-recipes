@@ -25,10 +25,16 @@ a {
   padding: 0 40px;
 }
 
+.nav-logo a i {
+  display: inline;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
 .nav-logo a {
   font-size: 28px;
   font-weight: 600;
-  color: var(--primary-color);
+  color: #333;
 }
 
 .nav-links {
@@ -37,13 +43,22 @@ a {
   list-style: none;
 }
 
-.nav-links li {
-  margin-left: 10px;
-}
-
 .nav-link {
   padding: 5px 10px;
   transition: 0.1s ease;
+  margin-left: 10px;
+}
+
+.nav-link.highlight {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+.nav-link.highlight:hover {
+  color: #fff;
+  filter: brightness(1.2);
 }
 
 .nav-link:hover {
