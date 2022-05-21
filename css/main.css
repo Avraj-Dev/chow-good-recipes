@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #7a3cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+/* Navbar start */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 40px;
+}
+
+.nav-logo a {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.nav-link {
+  padding: 5px 10px;
+  transition: 0.1s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+/* Navbar end */
