@@ -77,6 +77,10 @@ hr {
   margin-left: 10px;
 }
 
+.nav-link.active {
+  color: var(--primary-color);
+}
+
 .nav-link.highlight {
   color: #fff;
   background-color: var(--primary-color);
