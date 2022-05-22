@@ -24,6 +24,11 @@ a {
   color: #666;
 }
 
+hr {
+  display: none;
+  border: 0.5px solid #d7d7d7;
+}
+
 /* Navbar start */
 .nav-container {
   display: flex;
@@ -123,6 +128,13 @@ a {
   flex: 2;
 }
 
+.recipe-tags.rp {
+  flex: 1.5;
+  padding-left: 50px;
+  margin-top: 50px;
+  text-align: right;
+}
+
 .recipe-tags ul {
   list-style: none;
   margin-top: 10px;
@@ -180,8 +192,23 @@ footer a {
 }
 
 @media (max-width: 900px) {
+  hr {
+    display: block;
+    margin: 10px;
+  }
+
   .main-content {
     flex-direction: column-reverse;
+  }
+
+  .main-content.rp {
+    flex-direction: column;
+  }
+
+  .recipe-tags.rp {
+    padding-left: 10px;
+    margin: 0;
+    text-align: left;
   }
 }
 
