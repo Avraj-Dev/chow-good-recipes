@@ -19,6 +19,10 @@ body {
   margin: 0 auto;
 }
 
+#page {
+  min-height: calc(100vh - (80px + 40px));
+}
+
 a {
   text-decoration: none;
   color: #666;
@@ -182,9 +186,67 @@ hr {
   margin-top: 5px;
 }
 
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  margin-right: 40px;
+}
+
+.section-text h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.section-image {
+  width: 400px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.section.reverse .section-text {
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 18px;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 40px;
+  transition: 0.1s ease;
+}
+
+.contact-text:hover {
+  filter: brightness(0.9);
+}
+
 footer {
   height: 40px;
   text-align: center;
+  background-color: #fff;
 }
 
 footer a {
@@ -212,6 +274,21 @@ footer a {
   }
 }
 
+@media (max-width: 870px) {
+  .section-text h1 {
+    font-size: 35px;
+  }
+
+  .section-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .section-image {
+    aspect-ratio: 1 / 1;
+  }
+}
+
 @media (max-width: 700px) {
   .nav-links {
     display: none;
@@ -227,6 +304,7 @@ footer a {
     top: 80px;
     width: 100vw;
     background-color: #fff;
+    border-bottom: 1px solid #d7d7d7;
   }
 
   .nav-links li {
@@ -257,6 +335,38 @@ footer a {
 
   .recipe-cards {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-text {
+    margin-bottom: 20px;
+  }
+
+  .section-text h1 {
+    font-size: 35px;
+  }
+
+  .section-text p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .section-image {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
+
+  .section.reverse {
+    flex-direction: column;
+  }
+
+  .section.reverse .section-text {
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
 
