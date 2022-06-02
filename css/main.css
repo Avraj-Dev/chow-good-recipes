@@ -388,7 +388,7 @@ hr {
 
 .recipe-group {
   display: flex;
-  margin-top: 20px;
+  flex-direction: row-reverse;
 }
 
 .recipe-instructions {
@@ -430,7 +430,11 @@ footer a {
 
 @media (max-width: 1000px) {
   .recipe-group {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+
+  .recipe-instructions {
+    margin-top: 20px;
   }
 
   hr.sm {
